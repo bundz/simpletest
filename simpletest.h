@@ -39,6 +39,14 @@ void isNull(void* ptr) {
 	}
 }
 
+void isNotNull(void * ptr) {
+	if (ptr != NULL) {
+                printf("%s        PASSED!\n%s", KGRN, KNRM);
+        } else {
+                printf("%s        NOT PASSED!\n        pointer is not null%s\n", KRED, KNRM);
+        }
+}
+
 void isGreaterThan(int num, int value) {
 
 	if (num > value) {
